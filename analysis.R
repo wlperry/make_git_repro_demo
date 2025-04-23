@@ -112,7 +112,7 @@ mod_data <- hypoxia |>
 mod1 <- glm(severe_AHI ~ ., data = mod_data, family = "binomial")
 summary(mod1)
 
-mod2 <- glm(severe_AHI ~ Age + Sex + BMI, data = mod_data, family = "binomial")
+mod2 <- glm(severe_AHI ~ Age + Sex + BMI, data = mod_data, family = "gaussian")
 summary(mod2)
 
 mod3 <- glm(severe_AHI ~ Age + Sex, data = mod_data, family = "binomial")
